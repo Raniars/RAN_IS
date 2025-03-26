@@ -32,7 +32,7 @@ async function getAIResponse(input, userName, userId, messageID) {
 
 module.exports = {
     config: {
-        name: 'ai',
+        name: 'ai,Iaro Sanda, Raniars',
         author: 'Arn',
         role: 0,
         category: 'ai',
@@ -44,9 +44,9 @@ module.exports = {
 
         let response;
         if (input.toLowerCase() === "ai") {
-            response = "𝑆𝐴𝐿𝑈𝑇 𝐽𝐸 𝑆𝑈𝐼𝑆 𝐿'𝑖𝑛𝑡𝑒𝑙𝑙𝑖𝑔𝑒𝑛𝑐𝑒 𝐴𝑅𝑇𝐼𝐹𝐼𝐸𝐿𝐿𝐸 𝐶𝑅ÉÉ 𝑃𝐴𝑅 𝙍𝘼𝙉𝙄𝘼𝙍𝙎 ✨ !";
+            response = "𝑆𝐴𝐿𝑈𝑇 𝐽𝐸 𝑆𝑈𝐼𝑆 𝐿'𝑖𝑛𝑡𝑒𝑙𝑙𝑖𝑔𝑒𝑛𝑐𝑒 𝐴𝑅𝑇𝐼𝐹𝐼𝐸𝐿𝐿𝐸 𝐶𝑅ÉÉ 𝑃𝐴𝑅 𝙍𝘼𝙉𝙄𝘼𝙍𝙎  !";
         } else {
-            const aiResponse = await getAIResponse(input, event.senderID, event.messageID);
+            const aiResponse = await getAIResponse(input, event.senderID, event.messageID,event.emoji);
             response = aiResponse.response;
         }
 
@@ -65,6 +65,6 @@ module.exports = {
             response = aiResponse.response;
         }
 
-        message.reply(`𝙍𝘼𝙉𝙄𝘼𝙍𝙎 ✨  𝐵𝑂𝑇✫༒\n________________________________________\n${response}\n________________________`);
+        message.reply(`𝙍𝘼𝙉𝙄𝘼𝙍𝙎 𝐵𝑂𝑇✫༒\n________________________________________\n${response}🪄\n________________________`);
     }
 };
