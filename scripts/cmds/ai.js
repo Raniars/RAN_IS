@@ -32,7 +32,7 @@ async function getAIResponse(input, userName, userId, messageID) {
 
 module.exports = {
     config: {
-        name: 'ai,Iaro Sanda, Raniars',
+        name: 'ai',
         author: 'Arn',
         role: 0,
         category: 'ai',
